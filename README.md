@@ -36,4 +36,4 @@ Open `index.html` in any browser. No server or build step needed.
 
 ## Contact
 
-GitHub: [@tirthmehta10](https://github.com/tirthmehta10) &nbsp;|&nbsp; Email: tirthmehta1099@gmail.com &nbsp;|&nbsp; LinkedIn: [tirth-mehta](https://www.linkedin.com/in/tirth-mehta)
+GitHub: [@tirthmehta10](https://github.com/tirthmehta10) &nbsp;|&nbsp; Email: tirthmehta1099@gmail.com &nbsp;|&nbsp; LinkedIn: [tirthmehta10](https://www.linkedin.com/in/tirthmehta10)
