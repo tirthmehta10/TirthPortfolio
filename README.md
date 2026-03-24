@@ -1,4 +1,4 @@
-# Tirth Mehta — Portfolio
+# Tirth Mehta Portfolio
 
 Personal portfolio website built with vanilla HTML, CSS, and JavaScript. Features a fully interactive 3D experience with mouse-tracked perspective tilt across every section.
 
@@ -6,7 +6,7 @@ Personal portfolio website built with vanilla HTML, CSS, and JavaScript. Feature
 
 ## Features
 
-Every card across the site responds to mouse movement with real-time 3D perspective tilt — experience entries, project cards, skill categories, and metric boxes all have depth. The hero section includes a particle system with mouse repulsion and connection lines, five floating 3D cards showing a live clock, terminal simulator, impact metrics, tech stack, and availability status. A typewriter effect cycles through job titles while an animated terminal replays command sequences. Content reveals on scroll via IntersectionObserver, skill bars and stat counters animate into view, and a custom cursor ring expands on interactive elements. Fully responsive with a mobile hamburger nav.
+Every card across the site responds to mouse movement with real-time 3D perspective tilt. Experience entries, project cards, skill categories, and metric boxes all have depth. The hero section includes a particle system with mouse repulsion and connection lines, five floating 3D cards showing a live clock, terminal simulator, impact metrics, tech stack, and availability status. A typewriter effect cycles through job titles while an animated terminal replays command sequences. Content reveals on scroll via IntersectionObserver, skill bars and stat counters animate into view, and a custom cursor ring expands on interactive elements. Fully responsive with a mobile hamburger nav.
 
 ## Tech Stack
 
