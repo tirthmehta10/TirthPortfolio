@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tirth Mehta – Software Developer | MS Computer Science, UT Dallas. Building scalable systems at DDRV.COM with Shopify automation, AI, GraphQL, Java, and Redis." />
+  <meta name="author" content="Tirth Mehta" />
+  <meta property="og:title" content="Tirth Mehta | Software Developer" />
+  <meta property="og:description" content="Software Developer building enterprise-scale systems. 85K+ SKUs automated, AI-powered pipelines, full-stack across Java, JavaScript, Python, and more." />
+  <title>Tirth Mehta | Software Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+
+  <div id="cursor-ring"></div>
+  <div id="cursor-dot"></div>
+  <div id="noise-overlay"></div>
+  <div id="scroll-progress"></div>
+
+  <!-- NAV -->
+  <nav id="topNav">
+    <div class="nav-inner">
+      <a class="nav-logo js-scroll-trigger" href="#page-top">
+        <span class="logo-bracket">[</span>TDM<span class="logo-bracket">]</span>
+      </a>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="js-scroll-trigger" href="#about"><span class="nav-num">01</span>About</a></li>
+        <li><a class="js-scroll-trigger" href="#experience"><span class="nav-num">02</span>Experience</a></li>
+        <li><a class="js-scroll-trigger" href="#projects"><span class="nav-num">03</span>Projects</a></li>
+        <li><a class="js-scroll-trigger" href="#skills"><span class="nav-num">04</span>Skills</a></li>
+        <li><a class="js-scroll-trigger" href="#connect"><span class="nav-num">05</span>Connect</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="status-pulse"></span>
+        <span class="status-text">Open to work</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="about" class="hero-section">
+    <canvas id="hero-particles"></canvas>
+    <div class="hero-grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-layout">
+
+      <!-- LEFT -->
+      <div class="hero-left">
+
+        <h1 class="hero-name reveal-up" style="--delay:80ms">
+          <span class="name-line-1">Tirth</span>
+          <span class="name-line-2">Mehta<span class="name-accent">.</span></span>
+        </h1>
+
+        <div class="hero-typing-wrap reveal-up" style="--delay:160ms">
+          <span class="dm-mono typing-label">~/role$ </span>
+          <span id="hero-typing" class="dm-mono typing-text"></span>
+          <span class="typing-cursor dm-mono">▋</span>
+        </div>
+
+        <p class="hero-bio reveal-up" style="--delay:220ms">
+          By day, I architect enterprise-grade automation systems at DDRV.COM, building AI-powered pipelines that handle <span class="bio-highlight">85,000+ SKUs</span> on Shopify and cutting 99% of manual ops work. Full-stack across <span class="bio-highlight">Java, JavaScript, Node.js</span> with a focus on AI integrations using Claude and OpenAI.
+          <br/><br/>
+          <span class="bio-secondary">By night? Dance floor. Gym. Repeat. The best engineers aren't just technical — they bring creativity, discipline, and relentless energy.</span>
+        </p>
+
+
+        <div class="hero-actions reveal-up" style="--delay:340ms">
+          <a href="#connect" class="btn-primary js-scroll-trigger">
+            <span>Let's Talk</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#projects" class="btn-outline js-scroll-trigger">
+            <span>View Work</span>
+          </a>
+        </div>
+
+        <div class="hero-socials reveal-up" style="--delay:420ms">
+          <a href="https://www.linkedin.com/in/tirthmehta10/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/tirthmehta10" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:tirthmehta1099@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: 3D FLOATING CARDS -->
+      <div class="hero-right reveal-right" style="--delay:200ms">
+        <div class="cards-3d-scene" id="cards3dScene">
+
+          <!-- Clock card -->
+          <div class="card-3d card-clock" data-depth="1.0">
+            <div class="card-3d-label dm-mono">
+              <span class="live-dot"></span> LIVE &middot; BOISE MST
+            </div>
+            <div class="clock-display">
+              <span id="live-time" class="dm-mono clock-time">--:--:--</span>
+              <span id="live-date" class="dm-mono clock-date">---</span>
+            </div>
+            <div class="dm-mono clock-tz">Mountain Standard Time · UTC-7</div>
+            <div class="card-3d-bar bar-purple"></div>
+          </div>
+
+          <!-- Terminal card -->
+          <div class="card-3d card-terminal" data-depth="1.6">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+              <span class="t-title dm-mono">tirth@ddrv ~ zsh</span>
+            </div>
+            <div class="terminal-body dm-mono" id="terminal-body">
+              <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd" id="terminal-cmd"></span></div>
+              <div class="t-output" id="terminal-output"></div>
+            </div>
+            <div class="card-3d-bar bar-green"></div>
+          </div>
+
+          <!-- Impact stats card -->
+          <div class="card-3d card-impact" data-depth="0.8">
+            <div class="card-3d-label dm-mono">// IMPACT</div>
+            <div class="impact-grid">
+              <div class="impact-box">
+                <span class="impact-n purple-n">85K+</span>
+                <span class="impact-l purple-l">SKUS AUTO</span>
+              </div>
+              <div class="impact-box">
+                <span class="impact-n red-n">99%</span>
+                <span class="impact-l red-l">MANUAL CUT</span>
+              </div>
+              <div class="impact-box">
+                <span class="impact-n green-n">3+</span>
+                <span class="impact-l green-l">YRS EXP</span>
+              </div>
+              <div class="impact-box">
+                <span class="impact-n amber-n">6</span>
+                <span class="impact-l amber-l">COMPANIES</span>
+              </div>
+            </div>
+            <div class="card-3d-bar bar-red"></div>
+          </div>
+
+          <!-- Stack card -->
+          <div class="card-3d card-stack" data-depth="1.4">
+            <div class="card-3d-label dm-mono">// TECH STACK</div>
+            <div class="stack-pills-3d">
+              <span class="sp3 sp-purple">Node.js</span>
+              <span class="sp3 sp-purple">GraphQL</span>
+              <span class="sp3 sp-purple">Redis</span>
+              <span class="sp3 sp-green">Claude API</span>
+              <span class="sp3 sp-purple">Shopify</span>
+              <span class="sp3 sp-amber">Java</span>
+              <span class="sp3 sp-green">Python</span>
+              <span class="sp3 sp-purple">React</span>
+              <span class="sp3 sp-amber">Spring Boot</span>
+              <span class="sp3 sp-green">MySQL</span>
+            </div>
+            <div class="card-3d-bar bar-green"></div>
+          </div>
+
+          <!-- Availability card -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span class="dm-mono scroll-label">scroll</span>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <div class="ribbon-outer" aria-hidden="true">
+    <div class="ribbon-track">
+      <span class="ribbon-item">Software Developer <span class="ribbon-sep">✦</span> Shopify Automation <span class="ribbon-sep">✦</span> AI Integration <span class="ribbon-sep">✦</span> Java · Node.js · Python <span class="ribbon-sep">✦</span> Redis · GraphQL · REST <span class="ribbon-sep">✦</span> Claude · OpenAI <span class="ribbon-sep">✦</span> Open to Opportunities <span class="ribbon-sep">✦</span></span>
+      <span class="ribbon-item" aria-hidden="true">Software Developer <span class="ribbon-sep">✦</span> Shopify Automation <span class="ribbon-sep">✦</span> AI Integration <span class="ribbon-sep">✦</span> Java · Node.js · Python <span class="ribbon-sep">✦</span> Redis · GraphQL · REST <span class="ribbon-sep">✦</span> Claude · OpenAI <span class="ribbon-sep">✦</span> Open to Opportunities <span class="ribbon-sep">✦</span></span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="content-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num dm-mono">02 /</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="exp-layout">
+        <div class="exp-rail"><div class="exp-rail-line"></div></div>
+        <div class="exp-entries">
+
+          <div class="exp-entry reveal-up">
+            <div class="exp-entry-dot"><span class="dot-inner"></span></div>
+            <div class="exp-entry-body">
+              <div class="exp-entry-top">
+                <div>
+                  <h3 class="exp-role">Software Developer</h3>
+                  <div class="exp-company">DDRV.COM &ndash; Dennis Dillon RV &amp; Marine</div>
+                </div>
+                <div class="exp-meta-block">
+                  <span class="exp-badge current-badge">&#9679; CURRENT</span>
+                  <div class="exp-meta-date dm-mono">Dec 2024 &ndash; Present</div>
+                  <div class="exp-meta-loc dm-mono">Boise, Idaho</div>
+                </div>
+              </div>
+              <p class="exp-desc">Built an enterprise-grade Shopify automation platform from scratch in Node.js, scaling product operations to 85,000+ SKUs and eliminating 99% of manual work. Architected a real-time sync engine between Lightspeed DMS and Shopify via GraphQL and Redis, with multi-supplier pipelines (WPS, Parts Unlimited, BRP) handling REST APIs, XML feeds, and CSV variant grouping with LeMans CDN image processing. Integrated Anthropic Claude Sonnet API for AI-powered, SEO-optimized product descriptions engineered to rank on Google Page 1.</p>
+              <div class="exp-tags">
+                <span class="tag">Node.js</span><span class="tag">Shopify GraphQL</span><span class="tag">Redis</span><span class="tag">Anthropic Claude API</span><span class="tag">Lightspeed REST API</span><span class="tag">Liquid</span><span class="tag">REST / XML / CSV</span><span class="tag">AI/SEO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-entry reveal-up">
+            <div class="exp-entry-dot"><span class="dot-inner"></span></div>
+            <div class="exp-entry-body">
+              <div class="exp-entry-top">
+                <div>
+                  <h3 class="exp-role">Computer Science Instructor</h3>
+                  <div class="exp-company">Coding With Kids</div>
+                </div>
+                <div class="exp-meta-block">
+                  <div class="exp-meta-date dm-mono">2023 &ndash; 2024</div>
+                  <div class="exp-meta-loc dm-mono">United States</div>
+                </div>
+              </div>
+              <p class="exp-desc">Instructed K&ndash;8 students in coding fundamentals using Scratch, Python, JavaScript, and web development, both in-person and virtually. Developed customized lesson plans, leading to 12+ long-term student graduations from a cohort of 50+.</p>
+              <div class="exp-tags">
+                <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Scratch</span><span class="tag">Curriculum Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-entry reveal-up">
+            <div class="exp-entry-dot"><span class="dot-inner"></span></div>
+            <div class="exp-entry-body">
+              <div class="exp-entry-top">
+                <div>
+                  <h3 class="exp-role">Software Developer</h3>
+                  <div class="exp-company">Owting</div>
+                </div>
+                <div class="exp-meta-block">
+                  <div class="exp-meta-date dm-mono">2022 &ndash; 2023</div>
+                  <div class="exp-meta-loc dm-mono">United States</div>
+                </div>
+              </div>
+              <p class="exp-desc">Aligned user profile UI/UX with Figma designs in React Native, enhancing interactivity and user experience. Managed version control with Git and collaborated with the team to meet project deadlines using Jira and Confluence.</p>
+              <div class="exp-tags">
+                <span class="tag">React Native</span><span class="tag">Figma</span><span class="tag">Jira</span><span class="tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-entry reveal-up">
+            <div class="exp-entry-dot"><span class="dot-inner"></span></div>
+            <div class="exp-entry-body">
+              <div class="exp-entry-top">
+                <div>
+                  <h3 class="exp-role">Full Stack Developer</h3>
+                  <div class="exp-company">Ubique Networks</div>
+                </div>
+                <div class="exp-meta-block">
+                  <div class="exp-meta-date dm-mono">2021 &ndash; 2022</div>
+                  <div class="exp-meta-loc dm-mono">United States</div>
+                </div>
+              </div>
+              <p class="exp-desc">Enhanced bar and club efficiency with a cross-platform app, reducing order time by 5 minutes. Improved Google Sign-in, boosting registrations by 40% and cutting login time by 25%. Integrated Stripe for secure payments.</p>
+              <div class="exp-tags">
+                <span class="tag">React</span><span class="tag">Firebase</span><span class="tag">Stripe</span><span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-entry reveal-up">
+            <div class="exp-entry-dot"><span class="dot-inner"></span></div>
+            <div class="exp-entry-body">
+              <div class="exp-entry-top">
+                <div>
+                  <h3 class="exp-role">Software Developer</h3>
+                  <div class="exp-company">University of Texas at Dallas</div>
+                </div>
+                <div class="exp-meta-block">
+                  <div class="exp-meta-date dm-mono">2021 &ndash; 2023</div>
+                  <div class="exp-meta-loc dm-mono">United States</div>
+                </div>
+              </div>
+              <p class="exp-desc">Developed and maintained web applications using HTML, CSS, JavaScript, and React, boosting user engagement by 30%. Improved loading speed by 60% and reduced code duplication by 20%. Led a team of 3 developers.</p>
+              <div class="exp-tags">
+                <span class="tag">React</span><span class="tag">REST API</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-entry reveal-up">
+            <div class="exp-entry-dot"><span class="dot-inner"></span></div>
+            <div class="exp-entry-body">
+              <div class="exp-entry-top">
+                <div>
+                  <h3 class="exp-role">Software Developer</h3>
+                  <div class="exp-company">Softvan Pvt. Ltd.</div>
+                </div>
+                <div class="exp-meta-block">
+                  <div class="exp-meta-date dm-mono">2019 &ndash; 2021</div>
+                  <div class="exp-meta-loc dm-mono">Gujarat, India</div>
+                </div>
+              </div>
+              <p class="exp-desc">Implemented scalable microservices with Spring Boot and Spring Data JPA. Managed MySQL databases using Hibernate and Java Persistence APIs. Developed AI/ML models, boosting performance by 25% with deep learning.</p>
+              <div class="exp-tags">
+                <span class="tag">Spring Boot</span><span class="tag">MySQL</span><span class="tag">AWS S3</span><span class="tag">AI/ML</span><span class="tag">Java</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="edu-inline-wrap reveal-up">
+        <div class="section-header" style="margin-top:5rem">
+          <span class="section-num dm-mono">EDU /</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="edu-row">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-info">
+              <div class="edu-degree">M.S. Computer Science</div>
+              <div class="edu-school">University of Texas at Dallas</div>
+              <div class="edu-loc dm-mono"><i class="fas fa-map-marker-alt"></i> Richardson, TX</div>
+            </div>
+            <div class="edu-date dm-mono">Aug 2021 &mdash; May 2023</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="edu-info">
+              <div class="edu-degree">B.Tech Computer Science &amp; Engineering</div>
+              <div class="edu-school">Gujarat Technological University</div>
+              <div class="edu-loc dm-mono"><i class="fas fa-map-marker-alt"></i> Gujarat, India</div>
+            </div>
+            <div class="edu-date dm-mono">Aug 2017 &mdash; Jun 2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="content-section alt-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num dm-mono">03 /</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="mega-project reveal-up">
+        <div class="mega-eyebrow">
+          <div class="mega-eyebrow-left">
+            <span class="mega-star dm-mono">&#9733; FLAGSHIP PROJECT</span>
+            <span class="mega-live-badge dm-mono"><span class="ft-status-dot"></span> LIVE IN PRODUCTION</span>
+          </div>
+          <a href="https://github.com/tirthmehta10/lightspeed-shopify-integration" target="_blank" class="mega-github-btn dm-mono">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        <div class="mega-body">
+          <div class="mega-left">
+            <h3 class="mega-title">Lightspeed &times; Shopify<br/>Sync Engine</h3>
+            <div class="mega-company dm-mono">DDRV.COM &ndash; Dennis Dillon RV &amp; Marine &middot; Boise, Idaho</div>
+            <p class="mega-desc">A production-grade automation platform that completely replaced manual product operations at a powersports dealership. Syncs inventory, pricing, and full product catalogs between a Lightspeed DMS and Shopify in real-time, with automated dropship fulfillment, AI-generated SEO descriptions, and a Redis caching layer.</p>
+            <div class="mega-metrics">
+              <div class="metric-box"><span class="metric-n">85K+</span><span class="metric-l">SKUs automated</span></div>
+              <div class="metric-box"><span class="metric-n">99%</span><span class="metric-l">manual work cut</span></div>
+              <div class="metric-box"><span class="metric-n">2hr</span><span class="metric-l">sync interval</span></div>
+              <div class="metric-box"><span class="metric-n">3</span><span class="metric-l">supplier pipelines</span></div>
+            </div>
+            <div class="subsystem-tabs">
+              <button class="sys-tab active" data-tab="catalog">Catalog</button>
+              <button class="sys-tab" data-tab="inventory">Inventory</button>
+              <button class="sys-tab" data-tab="fulfillment">Fulfillment</button>
+              <button class="sys-tab" data-tab="ai">AI / SEO</button>
+            </div>
+            <div class="sys-panels">
+              <div class="sys-panel active" id="tab-catalog">
+                <div class="sys-panel-title dm-mono"><i class="fas fa-layer-group"></i> Catalog Publishing</div>
+                <p class="sys-panel-desc">Parses supplier files (BRP CSV, Parts Unlimited XML, WPS SKUs) and publishes full product listings to Shopify — titles, variants, images via LeMans CDN, and pricing — in a single automated run.</p>
+                <div class="sys-commands dm-mono">
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run catalog:brp <span class="c-cmt"># Ski-Doo · Sea-Doo · Can-Am</span></span>
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run catalog:pu  <span class="c-cmt"># Parts Unlimited XML feed</span></span>
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run catalog:wps <span class="c-cmt"># WPS SKU sync</span></span>
+                </div>
+              </div>
+              <div class="sys-panel" id="tab-inventory">
+                <div class="sys-panel-title dm-mono"><i class="fas fa-sync-alt"></i> Live Inventory &amp; Pricing</div>
+                <p class="sys-panel-desc">Pulls real-time stock levels and pricing from Lightspeed POS every 2 hours via Windows Task Scheduler, routes through a Redis cache to minimize Shopify API calls, and pushes delta updates only.</p>
+                <div class="sys-commands dm-mono">
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run inventory:cache <span class="c-cmt"># Redis-cached sync</span></span>
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run inventory:check <span class="c-cmt"># Accuracy audit</span></span>
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run maintenance:dedupe <span class="c-cmt"># Remove duplicates</span></span>
+                </div>
+              </div>
+              <div class="sys-panel" id="tab-fulfillment">
+                <div class="sys-panel-title dm-mono"><i class="fas fa-shipping-fast"></i> Automated Dropshipping</div>
+                <p class="sys-panel-desc">When a Shopify order comes in for a WPS or Parts Unlimited product, the fulfillment job automatically forwards the order to the supplier API and pushes tracking numbers back to Shopify — zero manual touchpoints.</p>
+                <div class="sys-commands dm-mono">
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run fulfill:wps <span class="c-cmt"># Western Power Sports</span></span>
+                  <span class="cmd-line"><span class="c-prompt">$</span> npm run fulfill:pu  <span class="c-cmt"># Parts Unlimited</span></span>
+                </div>
+              </div>
+              <div class="sys-panel" id="tab-ai">
+                <div class="sys-panel-title dm-mono"><i class="fas fa-robot"></i> AI-Powered SEO Descriptions</div>
+                <p class="sys-panel-desc">Claude Sonnet generates SEO-optimized product descriptions for the BRP catalog using the Feature + Benefit + Proof formula — engineered to rank on Google Page 1 and appear in Google AI Overview.</p>
+                <div class="sys-commands dm-mono">
+                  <span class="cmd-line"><span class="c-prompt">&gt;</span> <span class="c-kw">const</span> desc = <span class="c-kw">await</span> claude.messages.create({</span>
+                  <span class="cmd-line">&nbsp;&nbsp;model: <span class="c-str">'claude-sonnet-4-5'</span>,</span>
+                  <span class="cmd-line">&nbsp;&nbsp;messages: [{ role: <span class="c-str">'user'</span>, content: prompt }]</span>
+                  <span class="cmd-line">}) <span class="c-cmt">// → SEO-ready, human-feeling copy</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-right">
+            <div class="arch-diagram">
+              <div class="arch-label dm-mono">// System Architecture</div>
+              <div class="arch-layer">
+                <div class="arch-layer-label dm-mono">SUPPLIERS</div>
+                <div class="arch-nodes">
+                  <div class="arch-node node-supplier"><i class="fas fa-motorcycle"></i><span>WPS</span></div>
+                  <div class="arch-node node-supplier"><i class="fas fa-cog"></i><span>PU</span></div>
+                  <div class="arch-node node-supplier"><i class="fas fa-snowflake"></i><span>BRP</span></div>
+                </div>
+              </div>
+              <div class="arch-arrow-row"><div class="arch-arrow">↓</div></div>
+              <div class="arch-layer">
+                <div class="arch-layer-label dm-mono">SYNC ENGINE</div>
+                <div class="arch-nodes arch-nodes-engine">
+                  <div class="arch-node node-engine node-main"><i class="fas fa-server"></i><span>Node.js Core</span></div>
+                  <div class="arch-node node-engine"><i class="fas fa-database"></i><span>Lightspeed API</span></div>
+                </div>
+              </div>
+              <div class="arch-arrow-row"><div class="arch-arrow arch-arrow-split">↓&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;↓</div></div>
+              <div class="arch-layer">
+                <div class="arch-layer-label dm-mono">SERVICES</div>
+                <div class="arch-nodes">
+                  <div class="arch-node node-service"><i class="fas fa-bolt"></i><span>Redis Cache</span></div>
+                  <div class="arch-node node-service node-ai"><i class="fas fa-robot"></i><span>Claude AI</span></div>
+                  <div class="arch-node node-service"><i class="fas fa-image"></i><span>LeMans CDN</span></div>
+                </div>
+              </div>
+              <div class="arch-arrow-row"><div class="arch-arrow">↓</div></div>
+              <div class="arch-layer">
+                <div class="arch-layer-label dm-mono">OUTPUT</div>
+                <div class="arch-nodes">
+                  <div class="arch-node node-output"><i class="fas fa-shopping-bag"></i><span>Shopify GraphQL</span></div>
+                </div>
+              </div>
+              <div class="arch-pulse dm-mono"><span class="pulse-dot"></span> Syncing every 2hrs &middot; 85,247 SKUs active</div>
+            </div>
+            <div class="mega-stack">
+              <div class="stack-label dm-mono">// Tech Stack</div>
+              <div class="stack-pills">
+                <span class="stack-pill sp-primary">Node.js</span>
+                <span class="stack-pill sp-primary">Shopify GraphQL</span>
+                <span class="stack-pill sp-primary">Redis</span>
+                <span class="stack-pill sp-ai">Anthropic Claude</span>
+                <span class="stack-pill sp-secondary">Lightspeed REST</span>
+                <span class="stack-pill sp-secondary">WPS API</span>
+                <span class="stack-pill sp-secondary">Parts Unlimited API</span>
+                <span class="stack-pill sp-secondary">fast-xml-parser</span>
+                <span class="stack-pill sp-secondary">sharp / axios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-grid-label dm-mono">// Other Projects</div>
+      <div class="proj-grid">
+        <div class="proj-card reveal-up">
+          <div class="proj-card-top">
+            <div class="proj-card-icon"><i class="fas fa-address-book"></i></div>
+            <div class="proj-card-links"><a href="https://github.com/tirthmehta10/Contact-Application" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <h4 class="proj-card-title">Contact Application</h4>
+          <p class="proj-card-desc">Contact management platform with search and edit functionality, clean CRUD interface with MySQL backend.</p>
+          <div class="proj-card-tags"><span class="tag tag-sm">Java</span><span class="tag tag-sm">MySQL</span><span class="tag tag-sm">CRUD</span></div>
+        </div>
+        <div class="proj-card reveal-up">
+          <div class="proj-card-top">
+            <div class="proj-card-icon"><i class="fas fa-database"></i></div>
+            <div class="proj-card-links"><a href="https://github.com/tirthmehta10/Davis-Database" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <h4 class="proj-card-title">Davis Database</h4>
+          <p class="proj-card-desc">Java database application streamlining data access with easy MySQL operations and user-friendly UI.</p>
+          <div class="proj-card-tags"><span class="tag tag-sm">Java</span><span class="tag tag-sm">MySQL</span><span class="tag tag-sm">JDBC</span></div>
+        </div>
+        <div class="proj-card reveal-up">
+          <div class="proj-card-top">
+            <div class="proj-card-icon"><i class="fas fa-images"></i></div>
+            <div class="proj-card-links"><a href="https://github.com/tirthmehta10/ImageGallery" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <h4 class="proj-card-title">Image Gallery</h4>
+          <p class="proj-card-desc">Responsive image gallery application to organize, display, and manage photos with a clean modern interface.</p>
+          <div class="proj-card-tags"><span class="tag tag-sm">JavaScript</span><span class="tag tag-sm">HTML/CSS</span><span class="tag tag-sm">Responsive</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="content-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num dm-mono">04 /</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-categories">
+          <div class="skill-cat reveal-up">
+            <div class="skill-cat-header"><i class="fas fa-code skill-cat-icon"></i><span class="skill-cat-title dm-mono">Languages</span></div>
+            <div class="skill-pills"><span class="pill">Java</span><span class="pill">JavaScript</span><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">HTML / CSS</span><span class="pill">Liquid (Shopify)</span></div>
+          </div>
+          <div class="skill-cat reveal-up">
+            <div class="skill-cat-header"><i class="fas fa-layer-group skill-cat-icon"></i><span class="skill-cat-title dm-mono">Frameworks &amp; Libraries</span></div>
+            <div class="skill-pills"><span class="pill">React</span><span class="pill">React Native</span><span class="pill">Spring Boot</span><span class="pill">Node.js</span><span class="pill">Bootstrap</span><span class="pill">Spring Data JPA</span></div>
+          </div>
+          <div class="skill-cat reveal-up">
+            <div class="skill-cat-header"><i class="fas fa-robot skill-cat-icon"></i><span class="skill-cat-title dm-mono">AI &amp; APIs</span></div>
+            <div class="skill-pills"><span class="pill pill-accent">Anthropic Claude API</span><span class="pill pill-accent">OpenAI / ChatGPT</span><span class="pill">Shopify GraphQL API</span><span class="pill">REST APIs</span><span class="pill">XML / CSV Pipelines</span><span class="pill pill-accent">SEO Automation</span></div>
+          </div>
+          <div class="skill-cat reveal-up">
+            <div class="skill-cat-header"><i class="fas fa-database skill-cat-icon"></i><span class="skill-cat-title dm-mono">Databases &amp; Caching</span></div>
+            <div class="skill-pills"><span class="pill">MySQL</span><span class="pill">Redis</span><span class="pill">Firebase</span><span class="pill">Hibernate</span><span class="pill">AWS S3</span></div>
+          </div>
+          <div class="skill-cat reveal-up">
+            <div class="skill-cat-header"><i class="fas fa-tools skill-cat-icon"></i><span class="skill-cat-title dm-mono">Tools &amp; Platforms</span></div>
+            <div class="skill-pills"><span class="pill">Git / GitHub</span><span class="pill">Shopify</span><span class="pill">Figma</span><span class="pill">Jira / Confluence</span><span class="pill">Stripe</span><span class="pill">Postman</span></div>
+          </div>
+        </div>
+        <div class="skills-bars reveal-right" style="--delay:100ms">
+          <div class="bars-label dm-mono">// Proficiency</div>
+          <div class="bar-item"><div class="bar-meta"><span class="bar-name">Java / Spring Boot</span><span class="bar-pct dm-mono">85%</span></div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
+          <div class="bar-item"><div class="bar-meta"><span class="bar-name">JavaScript / React</span><span class="bar-pct dm-mono">80%</span></div><div class="bar-track"><div class="bar-fill" data-pct="80"></div></div></div>
+          <div class="bar-item"><div class="bar-meta"><span class="bar-name">Python</span><span class="bar-pct dm-mono">75%</span></div><div class="bar-track"><div class="bar-fill" data-pct="75"></div></div></div>
+          <div class="bar-item"><div class="bar-meta"><span class="bar-name">Shopify / Liquid</span><span class="bar-pct dm-mono">90%</span></div><div class="bar-track"><div class="bar-fill" data-pct="90"></div></div></div>
+          <div class="bar-item"><div class="bar-meta"><span class="bar-name">GraphQL / REST APIs</span><span class="bar-pct dm-mono">88%</span></div><div class="bar-track"><div class="bar-fill" data-pct="88"></div></div></div>
+          <div class="bar-item"><div class="bar-meta"><span class="bar-name">Redis / Caching</span><span class="bar-pct dm-mono">82%</span></div><div class="bar-track"><div class="bar-fill" data-pct="82"></div></div></div>
+          <div class="bar-item"><div class="bar-meta"><span class="bar-name">AI / Claude &amp; OpenAI APIs</span><span class="bar-pct dm-mono">87%</span></div><div class="bar-track"><div class="bar-fill" data-pct="87"></div></div></div>
+          <div class="beyond-panel">
+            <div class="beyond-header dm-mono"><span class="live-dot"></span> Beyond the Code</div>
+            <div class="beyond-grid">
+              <div class="beyond-card"><span class="beyond-icon">🕺</span><span class="beyond-title">Dancer</span><span class="beyond-sub">Floor after hours</span></div>
+              <div class="beyond-card"><span class="beyond-icon">🏋️</span><span class="beyond-title">Gym Regular</span><span class="beyond-sub">Discipline off-keyboard</span></div>
+              <div class="beyond-card"><span class="beyond-icon">🤖</span><span class="beyond-title">AI Builder</span><span class="beyond-sub">Claude, OpenAI &amp; beyond</span></div>
+              <div class="beyond-card"><span class="beyond-icon">🌎</span><span class="beyond-title">Explorer</span><span class="beyond-sub">India &rarr; USA, always moving</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect" class="content-section alt-section connect-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num dm-mono">05 /</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="connect-layout">
+        <div class="connect-left reveal-up">
+          <p class="connect-big">Have an opportunity, a project idea, or just want to say hello?</p>
+          <p class="connect-sub">I respond to every message, usually within 24 hours.</p>
+          <a href="mailto:tirthmehta1099@gmail.com" class="btn-primary connect-btn">
+            <i class="fas fa-envelope"></i>
+            <span>tirthmehta1099@gmail.com</span>
+          </a>
+        </div>
+        <div class="connect-right reveal-right" style="--delay:150ms">
+          <div class="connect-links-title dm-mono">// Find me on</div>
+          <div class="connect-links">
+            <a href="https://www.linkedin.com/in/tirthmehta10/" target="_blank" class="connect-link-row"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span><i class="fas fa-arrow-right connect-arrow"></i></a>
+            <a href="https://github.com/tirthmehta10" target="_blank" class="connect-link-row"><i class="fab fa-github"></i><span>GitHub</span><i class="fas fa-arrow-right connect-arrow"></i></a>
+            <a href="https://www.instagram.com/tirthmehta10" target="_blank" class="connect-link-row"><i class="fab fa-instagram"></i><span>Instagram</span><i class="fas fa-arrow-right connect-arrow"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-name dm-mono"><span class="logo-bracket">[</span>TDM<span class="logo-bracket">]</span> Tirth Mehta</span>
+      <span class="footer-stack dm-mono">Java &nbsp;&bull;&nbsp; JavaScript &nbsp;&bull;&nbsp; Python &nbsp;&bull;&nbsp; Shopify &nbsp;&bull;&nbsp; AI</span>
+      <span class="footer-copy dm-mono">&copy; <span id="footer-year">2026</span></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
