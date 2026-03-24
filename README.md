@@ -4,21 +4,9 @@ Personal portfolio website built with vanilla HTML, CSS, and JavaScript. Feature
 
 **Live Site:** [tirthmehta10.github.io/TirthPortfolio](https://tirthmehta10.github.io/TirthPortfolio)
 
----
-
 ## Features
 
-- **3D tilt effects** on every card — experience, projects, skills, metrics — all respond to mouse movement
-- **Particle system** in the hero with mouse repulsion and connection lines
-- **5 floating 3D cards** — live clock, terminal simulator, impact metrics, tech stack, availability
-- **Typewriter effect** cycling through job titles
-- **Animated terminal** with scrolling command sequences
-- **Scroll-triggered reveal** animations via IntersectionObserver
-- **Skill bar animations** and stat counters on scroll
-- **Custom cursor** with ring + dot that expands on interactive elements
-- **Responsive** with mobile hamburger nav
-
----
+Every card across the site responds to mouse movement with real-time 3D perspective tilt — experience entries, project cards, skill categories, and metric boxes all have depth. The hero section includes a particle system with mouse repulsion and connection lines, five floating 3D cards showing a live clock, terminal simulator, impact metrics, tech stack, and availability status. A typewriter effect cycles through job titles while an animated terminal replays command sequences. Content reveals on scroll via IntersectionObserver, skill bars and stat counters animate into view, and a custom cursor ring expands on interactive elements. Fully responsive with a mobile hamburger nav.
 
 ## Tech Stack
 
@@ -32,26 +20,20 @@ Personal portfolio website built with vanilla HTML, CSS, and JavaScript. Feature
 
 No frameworks. No build tools. No dependencies.
 
----
-
 ## Sections
 
-1. **About** — Hero with particle canvas, typing effect, and 3D floating cards
-2. **Experience** — Timeline of 6 roles across India and the US
-3. **Projects** — DDRV Shopify Sync Engine (flagship) + 3 other projects
-4. **Skills** — 5 categories, proficiency bars, and "Beyond the Code" panel
-5. **Connect** — Contact form and social links
-
----
+| # | Section | Description |
+|---|---------|-------------|
+| 01 | About | Hero with particle canvas, typing effect, and 3D floating cards |
+| 02 | Experience | Timeline of 6 roles across India and the US |
+| 03 | Projects | DDRV Shopify Sync Engine (flagship) + 3 other projects |
+| 04 | Skills | 5 categories, proficiency bars, and Beyond the Code panel |
+| 05 | Connect | Contact form and social links |
 
 ## Run Locally
 
-Just open `index.html` in any browser — no server or build step needed.
-
----
+Open `index.html` in any browser. No server or build step needed.
 
 ## Contact
 
-- GitHub: [@tirthmehta10](https://github.com/tirthmehta10)
-- Email: tirthmehta1099@gmail.com
-- LinkedIn: [linkedin.com/in/tirth-mehta](https://www.linkedin.com/in/tirth-mehta)
+GitHub: [@tirthmehta10](https://github.com/tirthmehta10) &nbsp;|&nbsp; Email: tirthmehta1099@gmail.com &nbsp;|&nbsp; LinkedIn: [tirth-mehta](https://www.linkedin.com/in/tirth-mehta)
