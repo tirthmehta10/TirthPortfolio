@@ -651,6 +651,7 @@ strong { font-weight: 700; color: var(--text); }
 .proj-card:hover { border-color: rgba(138,100,255,0.35); transform: translateY(-4px); }
 .proj-card-top { display: flex; justify-content: space-between; align-items: center; }
 .proj-card-icon { font-size: 1.8rem; color: var(--accent); }
+.proj-card-links { display: inline-flex; gap: 0.75rem; align-items: center; }
 .proj-card-links a { color: var(--text-dim); font-size: 1.1rem; transition: color 0.2s; }
 .proj-card-links a:hover { color: var(--accent); }
 .proj-card-title { font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
@@ -694,6 +695,10 @@ strong { font-weight: 700; color: var(--text); }
 .connect-big { font-size: 1.5rem; font-weight: 700; color: var(--text); line-height: 1.4; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
 .connect-sub { font-size: 0.92rem; color: var(--text-dim); margin-bottom: 1.75rem; }
 .connect-btn { font-size: 0.88rem; word-break: break-all; }
+.connect-resume-btn { margin-top: 0.85rem; }
+.connect-recruiter { margin-top: 1rem; font-size: 0.75rem; color: var(--text-dim); opacity: 0.7; letter-spacing: 0.05em; }
+.btn-resume { border-color: rgba(138,100,255,0.45); }
+.btn-resume:hover { border-color: var(--accent); background: rgba(138,100,255,0.08); }
 .connect-links-title { font-size: 0.72rem; color: var(--text-faint); letter-spacing: 0.1em; margin-bottom: 1rem; }
 .connect-links { display: flex; flex-direction: column; gap: 0.5rem; }
 .connect-link-row { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; color: var(--text-dim); font-size: 0.9rem; font-weight: 500; transition: border-color 0.2s, color 0.2s, transform 0.2s; }

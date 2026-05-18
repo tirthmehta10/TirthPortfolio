@@ -4,6 +4,12 @@
 
 'use strict';
 
+// ── Always land on About/Hero on page load (no scroll restore) ─
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.addEventListener('load', () => {
+  if (!window.location.hash) window.scrollTo(0, 0);
+});
+
 // ── Custom cursor ─────────────────────────────────────────────
 (function () {
   const ring = document.getElementById('cursor-ring');
